@@ -11,7 +11,7 @@ app_icon = "octicon octicon-organization"
 app_color = "#0066CC"
 
 required_apps = [
-	{"app_name": "frappe", "version": ">=15.0.0 <16.0.0"},
+	{"app_name": "frappe", "version": ">=15.0.0,<16.0.0"},
 ]
 
 app_include_js = "seller_redirect.js"
