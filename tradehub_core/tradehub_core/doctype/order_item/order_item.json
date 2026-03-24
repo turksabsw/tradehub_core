@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "listing",
+  "listing_title",
+  "listing_variant",
+  "variation",
+  "column_break_1",
+  "unit_price",
+  "quantity",
+  "total_price",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "listing",
+   "fieldtype": "Link",
+   "label": "Listing",
+   "options": "Listing"
+  },
+  {
+   "fieldname": "listing_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ürün Adı"
+  },
+  {
+   "fieldname": "listing_variant",
+   "fieldtype": "Link",
+   "label": "Listing Variant",
+   "options": "Listing Variant"
+  },
+  {
+   "fieldname": "variation",
+   "fieldtype": "Data",
+   "label": "Varyant"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Birim Fiyat"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Adet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Toplam Fiyat"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Görsel"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Order Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

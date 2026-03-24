@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "seller",
+  "seller_code",
+  "cb_1",
+  "status",
+  "is_read",
+  "sb_sender",
+  "sender_name",
+  "sender_email",
+  "share_business_card",
+  "sb_message",
+  "message"
+ ],
+ "fields": [
+  {"fieldname": "seller", "fieldtype": "Link", "label": "Satıcı", "options": "Admin Seller Profile", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "seller_code", "fieldtype": "Data", "label": "Satıcı Kodu", "read_only": 1},
+  {"fieldname": "cb_1", "fieldtype": "Column Break"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Durum", "options": "Yeni\nOkundu\nYanıtlandı", "default": "Yeni", "in_list_view": 1},
+  {"fieldname": "is_read", "fieldtype": "Check", "label": "Okundu", "default": "0"},
+  {"fieldname": "sb_sender", "fieldtype": "Section Break", "label": "Gönderen"},
+  {"fieldname": "sender_name", "fieldtype": "Data", "label": "Gönderen Adı", "in_list_view": 1},
+  {"fieldname": "sender_email", "fieldtype": "Data", "label": "Gönderen E-posta", "options": "Email"},
+  {"fieldname": "share_business_card", "fieldtype": "Check", "label": "Kartvizit Paylaşıldı", "default": "0"},
+  {"fieldname": "sb_message", "fieldtype": "Section Break", "label": "Mesaj"},
+  {"fieldname": "message", "fieldtype": "Text", "label": "Mesaj", "reqd": 1}
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Seller Inquiry",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "read": 1, "role": "System Manager", "write": 1},
+  {"read": 1, "role": "Marketplace Admin", "write": 1, "delete": 1},
+  {"read": 1, "role": "Marketplace Seller", "write": 1},
+  {"read": 1, "write": 1, "role": "Seller"}
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

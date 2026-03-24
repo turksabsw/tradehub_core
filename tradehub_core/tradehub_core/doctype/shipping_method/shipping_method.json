@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "autoname": "field:method_name",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "method_name",
+  "shipping_type",
+  "is_active",
+  "column_break_1",
+  "min_days",
+  "max_days",
+  "pricing_section",
+  "base_cost",
+  "cost_per_kg",
+  "currency",
+  "column_break_pricing",
+  "free_shipping_threshold",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "method_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Method Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Standard",
+   "fieldname": "shipping_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Shipping Type",
+   "options": "Express\nAir\nSea\nLand\nStandard"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "min_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Min Days"
+  },
+  {
+   "default": "5",
+   "fieldname": "max_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Max Days"
+  },
+  {
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "default": "0",
+   "fieldname": "base_cost",
+   "fieldtype": "Currency",
+   "label": "Base Cost",
+   "options": "currency"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost_per_kg",
+   "fieldtype": "Currency",
+   "label": "Cost Per Kg",
+   "options": "currency"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_pricing",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "free_shipping_threshold",
+   "fieldtype": "Currency",
+   "label": "Free Shipping Threshold",
+   "description": "Order amount above which shipping is free. 0 = never free.",
+   "options": "currency"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Shipping Method",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "method_name, shipping_type",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "method_name",
+ "track_changes": 1
+}

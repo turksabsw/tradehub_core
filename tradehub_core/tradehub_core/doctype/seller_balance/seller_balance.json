@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:seller",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "seller",
+  "available_balance",
+  "cb_1",
+  "pending_balance",
+  "sb_1",
+  "total_earned",
+  "cb_2",
+  "total_withdrawn",
+  "currency"
+ ],
+ "fields": [
+  {
+   "fieldname": "seller",
+   "fieldtype": "Link",
+   "label": "Sat\u0131c\u0131",
+   "options": "Seller Profile",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "available_balance",
+   "fieldtype": "Currency",
+   "label": "Kullan\u0131labilir Bakiye"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pending_balance",
+   "fieldtype": "Currency",
+   "label": "Bekleyen Bakiye"
+  },
+  {
+   "fieldname": "sb_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_earned",
+   "fieldtype": "Currency",
+   "label": "Toplam Kazan\u00e7"
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_withdrawn",
+   "fieldtype": "Currency",
+   "label": "Toplam \u00c7ekim"
+  },
+  {
+   "default": "TRY",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Para Birimi",
+   "options": "Currency"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Seller Balance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Marketplace Seller"
+  },
+  {
+   "read": 1,
+   "role": "Seller"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

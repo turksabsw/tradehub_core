@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shipping_method",
+  "shipping_method_name",
+  "cost",
+  "min_days",
+  "max_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "shipping_method",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shipping Method",
+   "options": "Shipping Method",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "shipping_method.method_name",
+   "fieldname": "shipping_method_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Method Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "min_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Min Days"
+  },
+  {
+   "fieldname": "max_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Max Days"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Shipping Method Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "idx",
+ "sort_order": "ASC"
+}

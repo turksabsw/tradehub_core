@@ -1,0 +1,40 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"section-profile\",\"type\":\"section\",\"data\":{\"label\":\"Profilim\",\"columns\":4},\"items\":[{\"id\":\"lnk-admin-seller-profile\",\"type\":\"shortcut\",\"data\":{\"label\":\"Admin Satıcı Profili\",\"format\":\"card\",\"link_to\":\"Admin Seller Profile\",\"type\":\"DocType\",\"icon\":\"es-line-shield\"}},{\"id\":\"lnk-seller-balance\",\"type\":\"shortcut\",\"data\":{\"label\":\"Bakiye\",\"format\":\"card\",\"link_to\":\"Seller Balance\",\"type\":\"DocType\",\"icon\":\"es-line-wallet\"}}]},{\"id\":\"section-listing\",\"type\":\"section\",\"data\":{\"label\":\"Ürünler & İlanlar\",\"columns\":4},\"items\":[{\"id\":\"lnk-listing\",\"type\":\"shortcut\",\"data\":{\"label\":\"İlanlar\",\"format\":\"card\",\"link_to\":\"Listing\",\"type\":\"DocType\",\"icon\":\"es-line-package\"}},{\"id\":\"lnk-listing-variant\",\"type\":\"shortcut\",\"data\":{\"label\":\"İlan Varyantları\",\"format\":\"card\",\"link_to\":\"Listing Variant\",\"type\":\"DocType\",\"icon\":\"es-line-settings\"}},{\"id\":\"lnk-supplier-profile\",\"type\":\"shortcut\",\"data\":{\"label\":\"Tedarikçi Profili\",\"format\":\"card\",\"link_to\":\"Supplier Profile\",\"type\":\"DocType\",\"icon\":\"es-line-truck\"}},{\"id\":\"lnk-seller-category\",\"type\":\"shortcut\",\"data\":{\"label\":\"Satıcı Kategorileri\",\"format\":\"card\",\"link_to\":\"Seller Category\",\"type\":\"DocType\",\"icon\":\"es-line-tag-double\"}}]},{\"id\":\"section-contact\",\"type\":\"section\",\"data\":{\"label\":\"İletişim & Finans\",\"columns\":4},\"items\":[{\"id\":\"lnk-seller-inquiry\",\"type\":\"shortcut\",\"data\":{\"label\":\"Satıcı Sorguları\",\"format\":\"card\",\"link_to\":\"Seller Inquiry\",\"type\":\"DocType\",\"icon\":\"es-line-chat\"}},{\"id\":\"lnk-seller-review\",\"type\":\"shortcut\",\"data\":{\"label\":\"Satıcı Değerlendirme\",\"format\":\"card\",\"link_to\":\"Seller Review\",\"type\":\"DocType\",\"icon\":\"es-line-star\"}},{\"id\":\"lnk-currency-rate\",\"type\":\"shortcut\",\"data\":{\"label\":\"Döviz Kurları\",\"format\":\"card\",\"link_to\":\"Currency Rate\",\"type\":\"DocType\",\"icon\":\"es-line-currency\"}}]}]",
+ "creation": "2024-01-01 00:00:00.000000",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "doctype": "Workspace",
+ "extends": "",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Satıcı Paneli",
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Tradehub Seller",
+ "owner": "Administrator",
+ "public": 1,
+ "restrict_to_domain": "",
+ "roles": [
+  {"role": "Seller"},
+  {"role": "Marketplace Seller"},
+  {"role": "Marketplace Admin"},
+  {"role": "System Manager"}
+ ],
+ "sequence_id": 99,
+ "shortcuts": [
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "Admin Satıcı Profili", "link_to": "Admin Seller Profile", "name": "Admin Seller Profile", "type": "DocType"},
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "Bakiye", "link_to": "Seller Balance", "name": "Seller Balance", "type": "DocType"},
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "İlanlar", "link_to": "Listing", "name": "Listing", "type": "DocType"},
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "İlan Varyantları", "link_to": "Listing Variant", "name": "Listing Variant", "type": "DocType"},
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "Tedarikçi Profili", "link_to": "Supplier Profile", "name": "Supplier Profile", "type": "DocType"},
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "Satıcı Kategorileri", "link_to": "Seller Category", "name": "Seller Category", "type": "DocType"},
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "Satıcı Sorguları", "link_to": "Seller Inquiry", "name": "Seller Inquiry", "type": "DocType"},
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "Satıcı Değerlendirme", "link_to": "Seller Review", "name": "Seller Review", "type": "DocType"},
+  {"color": "Grey", "doc_view": "", "format": "Card", "label": "Döviz Kurları", "link_to": "Currency Rate", "name": "Currency Rate", "type": "DocType"}
+ ],
+ "title": "Satıcı Paneli"
+}

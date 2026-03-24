@@ -1,0 +1,444 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:seller_code",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_hesabim",
+  "seller_name",
+  "seller_code",
+  "user",
+  "cb_hesabim",
+  "status",
+  "seller_type",
+  "tab_magaza",
+  "logo",
+  "banner_image",
+  "cb_magaza",
+  "description",
+  "slogan",
+  "gallery_images",
+  "tab_sirket",
+  "company_name",
+  "tax_id",
+  "tax_office",
+  "cb_sirket",
+  "founded_year",
+  "staff_count",
+  "annual_revenue",
+  "factory_size",
+  "business_type",
+  "main_markets",
+  "certifications",
+  "tab_iletisim",
+  "email",
+  "phone",
+  "website",
+  "cb_iletisim",
+  "address_line1",
+  "address_line2",
+  "city",
+  "district",
+  "postal_code",
+  "country",
+  "tab_banka",
+  "bank_name",
+  "iban",
+  "account_holder",
+  "tab_performans",
+  "is_verified",
+  "verification_type",
+  "health_score",
+  "score_grade",
+  "cb_performans",
+  "total_orders",
+  "rating",
+  "review_count",
+  "response_time",
+  "response_rate",
+  "on_time_delivery",
+  "tab_admin",
+  "commission_rate",
+  "subscription_plan",
+  "cb_admin",
+  "approved_by",
+  "approved_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_hesabim",
+   "fieldtype": "Tab Break",
+   "label": "Hesab\u0131m"
+  },
+  {
+   "fieldname": "seller_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ma\u011faza Ad\u0131",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seller_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sat\u0131c\u0131 Kodu",
+   "read_only": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "Kullan\u0131c\u0131",
+   "options": "User",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "cb_hesabim",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Durum",
+   "options": "Pending\nActive\nSuspended\nBlocked"
+  },
+  {
+   "default": "Individual",
+   "fieldname": "seller_type",
+   "fieldtype": "Select",
+   "label": "Sat\u0131c\u0131 Tipi",
+   "options": "Individual\nCorporate"
+  },
+  {
+   "fieldname": "tab_magaza",
+   "fieldtype": "Tab Break",
+   "label": "Ma\u011faza"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "banner_image",
+   "fieldtype": "Attach Image",
+   "label": "Banner Görsel"
+  },
+  {
+   "fieldname": "cb_magaza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Ma\u011faza A\u00e7\u0131klamas\u0131"
+  },
+  {
+   "fieldname": "slogan",
+   "fieldtype": "Data",
+   "label": "Slogan"
+  },
+  {
+   "fieldname": "gallery_images",
+   "fieldtype": "Table",
+   "label": "Galeri Foto\u011fraflar\u0131",
+   "options": "Seller Gallery Image",
+   "description": "Fabrika veya d\u00fckkan foto\u011fraflar\u0131, maksimum 20 adet"
+  },
+  {
+   "fieldname": "tab_sirket",
+   "fieldtype": "Tab Break",
+   "label": "\u015firket Profili"
+  },
+  {
+   "depends_on": "eval:doc.seller_type=='Corporate'",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "\u015firket Ad\u0131"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Vergi No / TC No"
+  },
+  {
+   "depends_on": "eval:doc.seller_type=='Corporate'",
+   "fieldname": "tax_office",
+   "fieldtype": "Data",
+   "label": "Vergi Dairesi"
+  },
+  {
+   "fieldname": "cb_sirket",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "founded_year",
+   "fieldtype": "Data",
+   "label": "Kurulu\u015f Y\u0131l\u0131"
+  },
+  {
+   "fieldname": "staff_count",
+   "fieldtype": "Data",
+   "label": "Personel Say\u0131s\u0131"
+  },
+  {
+   "fieldname": "annual_revenue",
+   "fieldtype": "Data",
+   "label": "Y\u0131ll\u0131k Ciro"
+  },
+  {
+   "fieldname": "factory_size",
+   "fieldtype": "Data",
+   "label": "Fabrika B\u00fcy\u00fckl\u00fc\u011f\u00fc (m\u00b2)"
+  },
+  {
+   "default": "Manufacturer",
+   "fieldname": "business_type",
+   "fieldtype": "Select",
+   "label": "\u0130\u015fletme Tipi",
+   "options": "Manufacturer\nWholesaler\nRetailer\nOther"
+  },
+  {
+   "fieldname": "main_markets",
+   "fieldtype": "Small Text",
+   "label": "Ana Pazarlar"
+  },
+  {
+   "fieldname": "certifications",
+   "fieldtype": "Small Text",
+   "label": "Sertifikalar",
+   "description": "Virgülle ayrılmış sertifikalar, örn: ISO 9001, CE, RoHS"
+  },
+  {
+   "fieldname": "tab_iletisim",
+   "fieldtype": "Tab Break",
+   "label": "\u0130leti\u015fim"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "E-posta",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Telefon"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Web Sitesi"
+  },
+  {
+   "fieldname": "cb_iletisim",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line1",
+   "fieldtype": "Data",
+   "label": "Adres"
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Adres 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "\u015fehir"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "\u0130l\u00e7e"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Posta Kodu"
+  },
+  {
+   "default": "Turkey",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "\u00dclke",
+   "options": "Country"
+  },
+  {
+   "fieldname": "tab_banka",
+   "fieldtype": "Tab Break",
+   "label": "Banka"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Banka"
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "label": "IBAN"
+  },
+  {
+   "fieldname": "account_holder",
+   "fieldtype": "Data",
+   "label": "Hesap Sahibi"
+  },
+  {
+   "fieldname": "tab_performans",
+   "fieldtype": "Tab Break",
+   "label": "Performans"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "label": "Doğrulanmış Tedarikçi"
+  },
+  {
+   "fieldname": "verification_type",
+   "fieldtype": "Data",
+   "label": "Doğrulama Tipi",
+   "description": "Örn: Verified Multispecialty Supplier, Verified PRO Supplier"
+  },
+  {
+   "default": "100",
+   "fieldname": "health_score",
+   "fieldtype": "Float",
+   "label": "Sa\u011fl\u0131k Skoru",
+   "read_only": 1
+  },
+  {
+   "default": "A",
+   "fieldname": "score_grade",
+   "fieldtype": "Select",
+   "label": "Not",
+   "options": "\nA\nB\nC\nD\nF",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_performans",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_orders",
+   "fieldtype": "Int",
+   "label": "Toplam Sipari\u015f",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "rating",
+   "fieldtype": "Float",
+   "label": "Puan",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "review_count",
+   "fieldtype": "Int",
+   "label": "Değerlendirme Sayısı",
+   "read_only": 1
+  },
+  {
+   "fieldname": "response_time",
+   "fieldtype": "Data",
+   "label": "Yanıt Süresi",
+   "description": "Örn: < 24 saat"
+  },
+  {
+   "default": "0",
+   "fieldname": "response_rate",
+   "fieldtype": "Percent",
+   "label": "Yanıt Oranı",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "on_time_delivery",
+   "fieldtype": "Percent",
+   "label": "Zamanında Teslimat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_admin",
+   "fieldtype": "Tab Break",
+   "label": "Admin"
+  },
+  {
+   "default": "8",
+   "fieldname": "commission_rate",
+   "fieldtype": "Float",
+   "label": "Komisyon (%)"
+  },
+  {
+   "fieldname": "subscription_plan",
+   "fieldtype": "Select",
+   "label": "Abonelik",
+   "options": "\nBasic\nPro\nEnterprise"
+  },
+  {
+   "fieldname": "cb_admin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Onaylayan",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_on",
+   "fieldtype": "Datetime",
+   "label": "Onay Tarihi",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Admin Seller Profile",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Marketplace Admin",
+   "write": 1
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "Marketplace Seller",
+   "write": 1
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "Seller",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

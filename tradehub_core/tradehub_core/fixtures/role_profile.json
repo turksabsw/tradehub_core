@@ -1,0 +1,247 @@
+[
+  {
+    "doctype": "Role Profile",
+    "name": "Platform Super Admin",
+    "role_profile": "Platform Super Admin",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Platform Admin",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Platform Finance",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Compliance Officer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Support Agent",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Platform Finance Manager",
+    "role_profile": "Platform Finance Manager",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Platform Finance",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Compliance Manager",
+    "role_profile": "Compliance Manager",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Compliance Officer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Support Staff",
+    "role_profile": "Support Staff",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Support Agent",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Seller Full Access",
+    "role_profile": "Seller Full Access",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Seller Owner",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Admin",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Finance",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Staff",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Viewer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Seller Manager",
+    "role_profile": "Seller Manager",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Seller Admin",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Finance",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Staff",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Viewer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Seller Finance Staff",
+    "role_profile": "Seller Finance Staff",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Seller Finance",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Viewer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Seller Operations",
+    "role_profile": "Seller Operations",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Seller Staff",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Seller Viewer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Buyer Full Access",
+    "role_profile": "Buyer Full Access",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Buyer Admin",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Buyer Procurement",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Buyer Finance",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Buyer Viewer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Buyer Operations",
+    "role_profile": "Buyer Operations",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Buyer Procurement",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Buyer Viewer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  },
+  {
+    "doctype": "Role Profile",
+    "name": "Buyer Finance Staff",
+    "role_profile": "Buyer Finance Staff",
+    "roles": [
+      {
+        "doctype": "Has Role",
+        "role": "Buyer Finance",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      },
+      {
+        "doctype": "Has Role",
+        "role": "Buyer Viewer",
+        "parentfield": "roles",
+        "parenttype": "Role Profile"
+      }
+    ]
+  }
+]

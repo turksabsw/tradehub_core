@@ -1,0 +1,30 @@
+{
+ "charts": [],
+ "content": "[]",
+ "creation": "2024-01-01 00:00:00.000000",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "doctype": "Workspace",
+ "extends": "",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Satıcı Paneli",
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Tradehub Seller",
+ "owner": "Administrator",
+ "public": 1,
+ "restrict_to_domain": "",
+ "roles": [
+  {"role": "Seller"},
+  {"role": "Marketplace Seller"},
+  {"role": "Marketplace Admin"},
+  {"role": "System Manager"}
+ ],
+ "sequence_id": 99,
+ "shortcuts": [],
+ "title": "Satıcı Paneli"
+}

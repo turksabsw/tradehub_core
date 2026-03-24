@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "autoname": "field:code",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "coupon_type",
+  "value",
+  "column_break_1",
+  "min_order",
+  "max_uses",
+  "used_count",
+  "is_active",
+  "description",
+  "expires_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kupon Kodu",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "percent",
+   "fieldname": "coupon_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tür",
+   "options": "percent\nfixed\nshipping",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Değer",
+   "precision": 2
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "min_order",
+   "fieldtype": "Currency",
+   "label": "Min. Sipariş Tutarı"
+  },
+  {
+   "default": "0",
+   "fieldname": "max_uses",
+   "fieldtype": "Int",
+   "label": "Max Kullanım (0=sınırsız)"
+  },
+  {
+   "default": "0",
+   "fieldname": "used_count",
+   "fieldtype": "Int",
+   "label": "Kullanım Sayısı",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Aktif"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Açıklama"
+  },
+  {
+   "fieldname": "expires_at",
+   "fieldtype": "Date",
+   "label": "Son Geçerlilik"
+  }
+ ],
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Coupon",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "code",
+ "track_changes": 1
+}

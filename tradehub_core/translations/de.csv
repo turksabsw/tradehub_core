@@ -1,0 +1,68 @@
+# TradeHub Core German Translations
+# Format: source,translated,context (optional)
+# TODO: Add German translations - placeholders below
+
+# Common Labels
+Basic Information,Grundinformationen,
+Status,Status,
+User,Benutzer,
+Tenant,Mieter,
+Organization,Organisation,
+Description,Beschreibung,
+Image,Bild,
+Details,Details,
+Settings,Einstellungen,
+Notes,Notizen,
+System,System,
+Save,Speichern,
+Cancel,Abbrechen,
+Submit,Absenden,
+Delete,Loeschen,
+Edit,Bearbeiten,
+Email,E-Mail,
+
+# Actions
+Add,Hinzufuegen,
+Remove,Entfernen,
+Update,Aktualisieren,
+Search,Suchen,
+Filter,Filtern,
+Refresh,Aktualisieren,
+Export,Exportieren,
+Import,Importieren,
+
+# Status Values
+Active,Aktiv,
+Inactive,Inaktiv,
+Draft,Entwurf,
+Enabled,Aktiviert,
+Disabled,Deaktiviert,
+Suspended,Gesperrt,
+Pending,Ausstehend,
+Approved,Genehmigt,
+Rejected,Abgelehnt,
+
+# Common Messages
+Required,Erforderlich,
+Invalid,Ungueltig,
+Success,Erfolg,
+Error,Fehler,
+Warning,Warnung,
+Loading,Laden,
+Yes,Ja,
+No,Nein,
+
+# Roles (Task 6 - RBAC New Role Names)
+Platform Admin,Plattform-Administrator,
+Platform Finance,Plattform-Finanzen,
+Compliance Officer,Compliance-Beauftragter,
+Support Agent,Support-Agent,
+Seller Owner,Verkaeufer-Inhaber,
+Seller Admin,Verkaeufer-Administrator,
+Seller Finance,Verkaeufer-Finanzen,
+Seller Staff,Verkaeufer-Mitarbeiter,
+Seller Viewer,Verkaeufer-Betrachter,
+Buyer Admin,Kaeufer-Administrator,
+Buyer Procurement,Kaeufer-Beschaffung,
+Buyer Finance,Kaeufer-Finanzen,
+Buyer Viewer,Kaeufer-Betrachter,

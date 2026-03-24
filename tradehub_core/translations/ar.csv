@@ -1,0 +1,68 @@
+# TradeHub Core Arabic Translations
+# Format: source,translated,context (optional)
+# TODO: Add Arabic translations - placeholders below
+
+# Common Labels
+Basic Information,المعلومات الأساسية,
+Status,الحالة,
+User,المستخدم,
+Tenant,المستأجر,
+Organization,المنظمة,
+Description,الوصف,
+Image,الصورة,
+Details,التفاصيل,
+Settings,الإعدادات,
+Notes,ملاحظات,
+System,النظام,
+Save,حفظ,
+Cancel,إلغاء,
+Submit,إرسال,
+Delete,حذف,
+Edit,تعديل,
+Email,البريد الإلكتروني,
+
+# Actions
+Add,إضافة,
+Remove,إزالة,
+Update,تحديث,
+Search,بحث,
+Filter,تصفية,
+Refresh,تحديث,
+Export,تصدير,
+Import,استيراد,
+
+# Status Values
+Active,نشط,
+Inactive,غير نشط,
+Draft,مسودة,
+Enabled,مفعل,
+Disabled,معطل,
+Suspended,معلق,
+Pending,قيد الانتظار,
+Approved,موافق عليه,
+Rejected,مرفوض,
+
+# Common Messages
+Required,مطلوب,
+Invalid,غير صالح,
+Success,نجاح,
+Error,خطأ,
+Warning,تحذير,
+Loading,جار التحميل,
+Yes,نعم,
+No,لا,
+
+# Roles (Task 6 - RBAC New Role Names)
+Platform Admin,مدير المنصة,
+Platform Finance,مالية المنصة,
+Compliance Officer,مسؤول الامتثال,
+Support Agent,وكيل الدعم,
+Seller Owner,مالك البائع,
+Seller Admin,مدير البائع,
+Seller Finance,مالية البائع,
+Seller Staff,موظفو البائع,
+Seller Viewer,مشاهد البائع,
+Buyer Admin,مدير المشتري,
+Buyer Procurement,مشتريات المشتري,
+Buyer Finance,مالية المشتري,
+Buyer Viewer,مشاهد المشتري,

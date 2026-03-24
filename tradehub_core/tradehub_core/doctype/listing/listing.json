@@ -1,0 +1,844 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "basic_info_section",
+  "listing_code",
+  "title",
+  "seller_profile",
+  "supplier_display_name",
+  "column_break_basic",
+  "status",
+  "listing_type",
+  "category",
+  "category_name",
+  "brand",
+  "condition",
+  "description_tab",
+  "description_section",
+  "short_description",
+  "description",
+  "pricing_tab",
+  "pricing_section",
+  "currency",
+  "base_price",
+  "selling_price",
+  "column_break_pricing",
+  "compare_at_price",
+  "discount_percentage",
+  "sample_price",
+  "b2b_section",
+  "b2b_enabled",
+  "pricing_tiers",
+  "inventory_tab",
+  "inventory_section",
+  "stock_qty",
+  "reserved_qty",
+  "available_qty",
+  "column_break_inventory",
+  "stock_uom",
+  "min_order_qty",
+  "max_order_qty",
+  "low_stock_threshold",
+  "track_inventory",
+  "allow_backorders",
+  "media_tab",
+  "media_section",
+  "primary_image",
+  "listing_images",
+  "video_url",
+  "specs_tab",
+  "specifications_section",
+  "attribute_values",
+  "variants_tab",
+  "variants_section",
+  "has_variants",
+  "variant_items",
+  "variants_html",
+  "customization_section",
+  "customization_options",
+  "shipping_tab",
+  "shipping_section",
+  "is_free_shipping",
+  "shipping_weight",
+  "column_break_shipping",
+  "ships_from_country",
+  "ships_from_city",
+  "handling_days",
+  "country_of_origin",
+  "packaging_details_section",
+  "package_type",
+  "package_length",
+  "package_width",
+  "package_height",
+  "package_weight",
+  "column_break_packaging",
+  "units_per_package",
+  "carton_length",
+  "carton_width",
+  "carton_height",
+  "carton_gross_weight",
+  "lead_time_section",
+  "lead_time_ranges",
+  "shipping_methods_section",
+  "shipping_methods",
+  "settings_tab",
+  "settings_section",
+  "is_featured",
+  "is_best_seller",
+  "is_new_arrival",
+  "is_on_sale",
+  "column_break_settings",
+  "is_visible",
+  "is_searchable",
+  "selling_point",
+  "statistics_tab",
+  "statistics_section",
+  "view_count",
+  "wishlist_count",
+  "order_count",
+  "column_break_stats",
+  "average_rating",
+  "review_count",
+  "seo_tab",
+  "seo_section",
+  "route",
+  "meta_title",
+  "meta_description",
+  "meta_keywords",
+  "system_tab",
+  "system_section",
+  "naming_series",
+  "erpnext_item",
+  "published_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "description": "Auto-generated unique listing identifier",
+   "fieldname": "listing_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Listing Code",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "length": 500,
+   "reqd": 1
+  },
+  {
+   "fieldname": "seller_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Satıcı Profili",
+   "options": "Admin Seller Profile",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "seller_profile.seller_name",
+   "fieldname": "supplier_display_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Pending\nDraft\nActive\nPaused\nOut of Stock\nArchived\nRejected",
+   "reqd": 1
+  },
+  {
+   "default": "Fixed Price",
+   "fieldname": "listing_type",
+   "fieldtype": "Select",
+   "label": "Listing Type",
+   "options": "Fixed Price\nAuction\nRFQ Only"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Seller Category"
+  },
+  {
+   "fetch_from": "category.category_name",
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "label": "Category Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "default": "New",
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "label": "Condition",
+   "options": "New\nUsed - Like New\nUsed - Good\nRefurbished"
+  },
+  {
+   "fieldname": "description_tab",
+   "fieldtype": "Tab Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Small Text",
+   "label": "Short Description",
+   "length": 500
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "pricing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "base_price",
+   "fieldtype": "Currency",
+   "label": "Base Price",
+   "options": "currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "selling_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Selling Price",
+   "options": "currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pricing",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "compare_at_price",
+   "fieldtype": "Currency",
+   "label": "Compare at Price",
+   "options": "currency"
+  },
+  {
+   "default": "0",
+   "fieldname": "discount_percentage",
+   "fieldtype": "Percent",
+   "label": "Discount %"
+  },
+  {
+   "default": "0",
+   "fieldname": "sample_price",
+   "fieldtype": "Currency",
+   "label": "Sample Price",
+   "options": "currency"
+  },
+  {
+   "fieldname": "b2b_section",
+   "fieldtype": "Section Break",
+   "label": "B2B Pricing Tiers"
+  },
+  {
+   "default": "1",
+   "fieldname": "b2b_enabled",
+   "fieldtype": "Check",
+   "label": "Enable B2B Pricing Tiers"
+  },
+  {
+   "depends_on": "eval:doc.b2b_enabled",
+   "fieldname": "pricing_tiers",
+   "fieldtype": "Table",
+   "label": "Pricing Tiers",
+   "options": "Listing Bulk Pricing Tier"
+  },
+  {
+   "fieldname": "inventory_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inventory"
+  },
+  {
+   "fieldname": "inventory_section",
+   "fieldtype": "Section Break",
+   "label": "Inventory"
+  },
+  {
+   "default": "0",
+   "fieldname": "stock_qty",
+   "fieldtype": "Float",
+   "label": "Stock Quantity",
+   "precision": 3
+  },
+  {
+   "default": "0",
+   "fieldname": "reserved_qty",
+   "fieldtype": "Float",
+   "label": "Reserved Quantity",
+   "precision": 3,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "available_qty",
+   "fieldtype": "Float",
+   "label": "Available Quantity",
+   "precision": 3,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_inventory",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Nos",
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM"
+  },
+  {
+   "default": "1",
+   "fieldname": "min_order_qty",
+   "fieldtype": "Int",
+   "label": "Min Order Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "max_order_qty",
+   "fieldtype": "Int",
+   "label": "Max Order Qty"
+  },
+  {
+   "default": "5",
+   "fieldname": "low_stock_threshold",
+   "fieldtype": "Int",
+   "label": "Low Stock Threshold"
+  },
+  {
+   "default": "1",
+   "fieldname": "track_inventory",
+   "fieldtype": "Check",
+   "label": "Track Inventory"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_backorders",
+   "fieldtype": "Check",
+   "label": "Allow Backorders"
+  },
+  {
+   "fieldname": "media_tab",
+   "fieldtype": "Tab Break",
+   "label": "Media"
+  },
+  {
+   "fieldname": "media_section",
+   "fieldtype": "Section Break",
+   "label": "Media"
+  },
+  {
+   "fieldname": "primary_image",
+   "fieldtype": "Attach Image",
+   "label": "Primary Image"
+  },
+  {
+   "fieldname": "listing_images",
+   "fieldtype": "Table",
+   "label": "Additional Images",
+   "options": "Listing Image"
+  },
+  {
+   "fieldname": "video_url",
+   "fieldtype": "Data",
+   "label": "Video URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "specs_tab",
+   "fieldtype": "Tab Break",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "specifications_section",
+   "fieldtype": "Section Break",
+   "label": "Product Specifications"
+  },
+  {
+   "fieldname": "attribute_values",
+   "fieldtype": "Table",
+   "label": "Specifications",
+   "options": "Listing Attribute Value"
+  },
+  {
+   "fieldname": "variants_tab",
+   "fieldtype": "Tab Break",
+   "label": "Variants"
+  },
+  {
+   "fieldname": "variants_section",
+   "fieldtype": "Section Break",
+   "label": "Variants"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_variants",
+   "fieldtype": "Check",
+   "label": "Has Variants"
+  },
+  {
+   "depends_on": "eval:doc.has_variants",
+   "fieldname": "variant_items",
+   "fieldtype": "Table",
+   "label": "Varyant Listesi",
+   "options": "Listing Variant Item",
+   "description": "Her renk/beden/malzeme için bir satır ekleyin. Örn: Renk=Kırmızı, Renk=Mavi, Beden=XL"
+  },
+  {
+   "depends_on": "eval:!doc.__islocal && doc.has_variants",
+   "fieldname": "variants_html",
+   "fieldtype": "HTML",
+   "label": "Variant List",
+   "hidden": 1
+  },
+  {
+   "fieldname": "customization_section",
+   "fieldtype": "Section Break",
+   "label": "Customization Options"
+  },
+  {
+   "fieldname": "customization_options",
+   "fieldtype": "Table",
+   "label": "Customization Options",
+   "options": "Listing Customization Option"
+  },
+  {
+   "fieldname": "shipping_tab",
+   "fieldtype": "Tab Break",
+   "label": "Shipping"
+  },
+  {
+   "fieldname": "shipping_section",
+   "fieldtype": "Section Break",
+   "label": "Shipping"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_free_shipping",
+   "fieldtype": "Check",
+   "label": "Free Shipping"
+  },
+  {
+   "fieldname": "shipping_weight",
+   "fieldtype": "Float",
+   "label": "Shipping Weight (kg)",
+   "precision": 3
+  },
+  {
+   "fieldname": "column_break_shipping",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Turkey",
+   "fieldname": "ships_from_country",
+   "fieldtype": "Link",
+   "label": "Ships From Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "ships_from_city",
+   "fieldtype": "Data",
+   "label": "Ships From City"
+  },
+  {
+   "default": "1",
+   "fieldname": "handling_days",
+   "fieldtype": "Int",
+   "label": "Handling Days"
+  },
+  {
+   "fieldname": "country_of_origin",
+   "fieldtype": "Link",
+   "label": "Country of Origin",
+   "options": "Country"
+  },
+  {
+   "fieldname": "packaging_details_section",
+   "fieldtype": "Section Break",
+   "label": "Packaging Details"
+  },
+  {
+   "fieldname": "package_type",
+   "fieldtype": "Select",
+   "label": "Package Type",
+   "options": "\nKarton Kutu\nPoşet\nAhşap Kasa\nPalet\nFile\nTorba\nDiğer"
+  },
+  {
+   "fieldname": "package_length",
+   "fieldtype": "Float",
+   "label": "Package Length (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "package_width",
+   "fieldtype": "Float",
+   "label": "Package Width (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "package_height",
+   "fieldtype": "Float",
+   "label": "Package Height (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "package_weight",
+   "fieldtype": "Float",
+   "label": "Package Weight (kg)",
+   "precision": "3"
+  },
+  {
+   "fieldname": "column_break_packaging",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "units_per_package",
+   "fieldtype": "Int",
+   "label": "Units Per Package"
+  },
+  {
+   "fieldname": "carton_length",
+   "fieldtype": "Float",
+   "label": "Carton Length (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "carton_width",
+   "fieldtype": "Float",
+   "label": "Carton Width (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "carton_height",
+   "fieldtype": "Float",
+   "label": "Carton Height (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "carton_gross_weight",
+   "fieldtype": "Float",
+   "label": "Carton Gross Weight (kg)",
+   "precision": "3"
+  },
+  {
+   "fieldname": "lead_time_section",
+   "fieldtype": "Section Break",
+   "label": "Lead Time Ranges"
+  },
+  {
+   "fieldname": "lead_time_ranges",
+   "fieldtype": "Table",
+   "label": "Lead Time Ranges",
+   "options": "Listing Lead Time Range"
+  },
+  {
+   "fieldname": "shipping_methods_section",
+   "fieldtype": "Section Break",
+   "label": "Shipping Methods"
+  },
+  {
+   "fieldname": "shipping_methods",
+   "fieldtype": "Table",
+   "label": "Shipping Methods",
+   "options": "Shipping Method Item"
+  },
+  {
+   "fieldname": "settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Settings"
+  },
+  {
+   "fieldname": "settings_section",
+   "fieldtype": "Section Break",
+   "label": "Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_featured",
+   "fieldtype": "Check",
+   "label": "Featured"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_best_seller",
+   "fieldtype": "Check",
+   "label": "Best Seller"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_new_arrival",
+   "fieldtype": "Check",
+   "label": "New Arrival"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_on_sale",
+   "fieldtype": "Check",
+   "label": "On Sale"
+  },
+  {
+   "fieldname": "column_break_settings",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_visible",
+   "fieldtype": "Check",
+   "label": "Visible"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_searchable",
+   "fieldtype": "Check",
+   "label": "Searchable"
+  },
+  {
+   "fieldname": "selling_point",
+   "fieldtype": "Data",
+   "label": "Selling Point",
+   "description": "Short highlight text for product card, e.g. '180 gün en düşük fiyat'"
+  },
+  {
+   "fieldname": "statistics_tab",
+   "fieldtype": "Tab Break",
+   "label": "Statistics"
+  },
+  {
+   "fieldname": "statistics_section",
+   "fieldtype": "Section Break",
+   "label": "Statistics"
+  },
+  {
+   "default": "0",
+   "fieldname": "view_count",
+   "fieldtype": "Int",
+   "label": "View Count",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "wishlist_count",
+   "fieldtype": "Int",
+   "label": "Wishlist Count",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "order_count",
+   "fieldtype": "Int",
+   "label": "Order Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_stats",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "average_rating",
+   "fieldtype": "Float",
+   "label": "Average Rating",
+   "precision": 2,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "review_count",
+   "fieldtype": "Int",
+   "label": "Review Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "seo_tab",
+   "fieldtype": "Tab Break",
+   "label": "SEO"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "seo_section",
+   "fieldtype": "Section Break",
+   "label": "SEO"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "meta_title",
+   "fieldtype": "Data",
+   "label": "Meta Title"
+  },
+  {
+   "fieldname": "meta_description",
+   "fieldtype": "Small Text",
+   "label": "Meta Description"
+  },
+  {
+   "fieldname": "meta_keywords",
+   "fieldtype": "Small Text",
+   "label": "Meta Keywords"
+  },
+  {
+   "fieldname": "system_tab",
+   "fieldtype": "Tab Break",
+   "label": "System"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "system_section",
+   "fieldtype": "Section Break",
+   "label": "System"
+  },
+  {
+   "default": "LST-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "LST-.#####"
+  },
+  {
+   "fieldname": "erpnext_item",
+   "fieldtype": "Link",
+   "label": "ERPNext Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "published_at",
+   "fieldtype": "Datetime",
+   "label": "Published At",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Listing",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All"
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "Seller"
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "Marketplace Seller"
+  }
+ ],
+ "quick_entry": 0,
+ "search_fields": "title, listing_code, category, brand, seller_profile",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "gray",
+   "title": "Draft"
+  },
+  {
+   "color": "green",
+   "title": "Active"
+  },
+  {
+   "color": "yellow",
+   "title": "Paused"
+  },
+  {
+   "color": "red",
+   "title": "Out of Stock"
+  },
+  {
+   "color": "gray",
+   "title": "Archived"
+  }
+ ],
+ "title_field": "title",
+ "track_changes": 1
+}

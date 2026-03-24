@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "autoname": "field:from_currency",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from_currency",
+  "to_currency_section",
+  "usd_rate",
+  "eur_rate",
+  "try_rate",
+  "column_break_rates",
+  "gbp_rate",
+  "cny_rate",
+  "settings_section",
+  "is_active",
+  "last_updated"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_currency",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Base Currency",
+   "options": "USD\nEUR\nTRY\nGBP\nCNY",
+   "reqd": 1,
+   "unique": 1,
+   "description": "The base currency to convert FROM"
+  },
+  {
+   "fieldname": "to_currency_section",
+   "fieldtype": "Section Break",
+   "label": "Exchange Rates (1 base = X target)"
+  },
+  {
+   "default": "1",
+   "fieldname": "usd_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "USD Rate",
+   "precision": 6,
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "eur_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "EUR Rate",
+   "precision": 6,
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "try_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "TRY Rate",
+   "precision": 6,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rates",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "gbp_rate",
+   "fieldtype": "Float",
+   "label": "GBP Rate",
+   "precision": 6
+  },
+  {
+   "default": "1",
+   "fieldname": "cny_rate",
+   "fieldtype": "Float",
+   "label": "CNY Rate",
+   "precision": 6
+  },
+  {
+   "fieldname": "settings_section",
+   "fieldtype": "Section Break",
+   "label": "Settings"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "last_updated",
+   "fieldtype": "Datetime",
+   "label": "Last Updated",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Currency Rate",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "quick_entry": 0,
+ "search_fields": "from_currency",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "from_currency",
+ "track_changes": 1
+}

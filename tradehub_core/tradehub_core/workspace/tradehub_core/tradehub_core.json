@@ -1,0 +1,88 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"th_header_1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"th_shortcut_1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Buyer Profile\",\"col\":4}},{\"id\":\"th_shortcut_2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Seller Application\",\"col\":4}},{\"id\":\"th_shortcut_3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Seller Profile\",\"col\":4}},{\"id\":\"th_spacer_1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"th_header_2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"th_card_1\",\"type\":\"card\",\"data\":{\"card_name\":\"TradeHub Core\",\"col\":4}}]",
+ "creation": "2026-03-16 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "store",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "TradeHub Core",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "TradeHub Core",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Buyer Profile",
+   "link_count": 0,
+   "link_to": "Buyer Profile",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Seller Application",
+   "link_count": 0,
+   "link_to": "Seller Application",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Seller Profile",
+   "link_count": 0,
+   "link_to": "Seller Profile",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-16 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "TradeHub Core",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "label": "Buyer Profile",
+   "link_to": "Buyer Profile",
+   "type": "DocType"
+  },
+  {
+   "label": "Seller Application",
+   "link_to": "Seller Application",
+   "type": "DocType"
+  },
+  {
+   "label": "Seller Profile",
+   "link_to": "Seller Profile",
+   "type": "DocType"
+  }
+ ],
+ "title": "TradeHub Core",
+ "type": "Workspace"
+}

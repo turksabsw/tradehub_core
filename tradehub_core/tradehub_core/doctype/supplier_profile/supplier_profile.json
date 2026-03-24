@@ -1,0 +1,260 @@
+{
+ "actions": [],
+ "autoname": "field:company_name",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_section",
+  "company_name",
+  "supplier_name",
+  "user",
+  "supplier",
+  "column_break_basic",
+  "country",
+  "city",
+  "years_in_business",
+  "established_year",
+  "verification_section",
+  "is_verified",
+  "verification_type",
+  "column_break_verification",
+  "logo",
+  "banner_image",
+  "performance_section",
+  "response_time",
+  "response_rate",
+  "on_time_delivery",
+  "column_break_performance",
+  "average_rating",
+  "review_count",
+  "total_orders",
+  "details_section",
+  "main_products",
+  "employees",
+  "annual_revenue",
+  "column_break_details",
+  "certifications",
+  "factory_address",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Display Name"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "Seller User",
+   "options": "User",
+   "unique": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "ERPNext Supplier",
+   "options": "Supplier",
+   "description": "Link to ERPNext Supplier record"
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Turkey",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "default": "0",
+   "fieldname": "years_in_business",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Years in Business"
+  },
+  {
+   "fieldname": "established_year",
+   "fieldtype": "Int",
+   "label": "Established Year"
+  },
+  {
+   "fieldname": "verification_section",
+   "fieldtype": "Section Break",
+   "label": "Verification"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Verified"
+  },
+  {
+   "fieldname": "verification_type",
+   "fieldtype": "Data",
+   "label": "Verification Type",
+   "description": "e.g., Verified Multispecialty Supplier, Verified PRO Supplier"
+  },
+  {
+   "fieldname": "column_break_verification",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "banner_image",
+   "fieldtype": "Attach Image",
+   "label": "Banner Image"
+  },
+  {
+   "fieldname": "performance_section",
+   "fieldtype": "Section Break",
+   "label": "Performance"
+  },
+  {
+   "fieldname": "response_time",
+   "fieldtype": "Data",
+   "label": "Response Time",
+   "description": "e.g., < 24 hours"
+  },
+  {
+   "default": "0",
+   "fieldname": "response_rate",
+   "fieldtype": "Percent",
+   "label": "Response Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "on_time_delivery",
+   "fieldtype": "Percent",
+   "label": "On-Time Delivery"
+  },
+  {
+   "fieldname": "column_break_performance",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "average_rating",
+   "fieldtype": "Float",
+   "label": "Average Rating",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "review_count",
+   "fieldtype": "Int",
+   "label": "Review Count"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_orders",
+   "fieldtype": "Int",
+   "label": "Total Orders"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "main_products",
+   "fieldtype": "Small Text",
+   "label": "Main Products",
+   "description": "Comma-separated main product categories"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Data",
+   "label": "Employees",
+   "description": "e.g., 50-100"
+  },
+  {
+   "fieldname": "annual_revenue",
+   "fieldtype": "Data",
+   "label": "Annual Revenue",
+   "description": "e.g., $1M-$5M"
+  },
+  {
+   "fieldname": "column_break_details",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certifications",
+   "fieldtype": "Small Text",
+   "label": "Certifications",
+   "description": "Comma-separated certifications"
+  },
+  {
+   "fieldname": "factory_address",
+   "fieldtype": "Small Text",
+   "label": "Factory Address"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tradehub Core",
+ "name": "Supplier Profile",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "quick_entry": 0,
+ "search_fields": "company_name, supplier_name, country",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "company_name",
+ "track_changes": 1
+}

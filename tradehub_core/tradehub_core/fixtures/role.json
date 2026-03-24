@@ -1,0 +1,145 @@
+[
+  {
+    "doctype": "Role",
+    "name": "Platform Admin",
+    "role_name": "Platform Admin",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Platform Finance",
+    "role_name": "Platform Finance",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Compliance Officer",
+    "role_name": "Compliance Officer",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Support Agent",
+    "role_name": "Support Agent",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Seller Owner",
+    "role_name": "Seller Owner",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Seller Admin",
+    "role_name": "Seller Admin",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Seller Finance",
+    "role_name": "Seller Finance",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Seller Staff",
+    "role_name": "Seller Staff",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Seller Viewer",
+    "role_name": "Seller Viewer",
+    "desk_access": 0,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Buyer Admin",
+    "role_name": "Buyer Admin",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Buyer Procurement",
+    "role_name": "Buyer Procurement",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Buyer Finance",
+    "role_name": "Buyer Finance",
+    "desk_access": 1,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "/app",
+    "restrict_to_domain": null
+  },
+  {
+    "doctype": "Role",
+    "name": "Buyer Viewer",
+    "role_name": "Buyer Viewer",
+    "desk_access": 0,
+    "is_custom": 1,
+    "disabled": 0,
+    "two_factor_auth": 0,
+    "home_page": "",
+    "restrict_to_domain": null
+  }
+]
