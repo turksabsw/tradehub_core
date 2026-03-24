@@ -3,9 +3,6 @@ name = "tradehub_core"
 description = "TradeHub B2B E-Commerce Backend"
 dynamic = ["version"]
 requires-python = ">=3.10"
-dependencies = [
-    "frappe>=15.0.0 <16.0.0",
-]
 
 [build-system]
 requires = ["flit_core >=3.4,<4"]
@@ -13,3 +10,6 @@ build-backend = "flit_core.buildapi"
 
 [tool.flit.module]
 name = "tradehub_core"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
